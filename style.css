@@ -365,6 +365,7 @@ footer {
   font-family: 'Montserrat', sans-serif;
   position: relative;
   overflow-x: hidden; /* prevent horizontal scrolling */
+  border: 1px solid red;
 }
 
 .footer-logo img {
@@ -373,6 +374,7 @@ footer {
   max-width: 100%;
   display: block;
   margin: 0 auto 0.1rem auto;
+   border: 1px solid blue;
 }
 
 .footer-name {
@@ -383,6 +385,7 @@ footer {
   font-size: 1.75rem;
   letter-spacing: 0.02em;
   margin: 0.1rem 0;
+   border: 1px solid red;
 }
 
 .footer-tagline {
@@ -404,7 +407,7 @@ footer {
   box-sizing: border-box;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   font-size: 0.95rem;
   font-weight: 400;
@@ -414,6 +417,8 @@ footer {
 
 /* Left text */
 .footer-left {
+  position: absolute;
+  left: 35vw;
   font-weight: 400;
   font-family: 'Montserrat', sans-serif;
 }
