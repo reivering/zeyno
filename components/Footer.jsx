@@ -8,11 +8,10 @@ export default function Footer() {
         <div className="font-bold italic text-2xl text-pink-400 mb-1">Zeyno</div>
         <div className="text-xs text-gray-500 mb-2 font-inter">LIFE-CENTERED | DESIGN-INSPIRED</div>
       </div>
-      <div className="w-full flex relative items-center justify-end border-t border-pink-100 pt-2 text-xs">
-      </div>
-      <div className="w-full p-4 flex justify-center bg-pink-100 bottom-3 text-center text-lg ">&copy;2025 · Built with curiosity and persistence
-        <div className="space-x-2 absolute right-0  px-2 text-lg font-inter ">
-          <a href="mailto:email@example.com" className="text-pink-400  hover:underline">Email</a>
+      <div className="w-full p-4 flex flex-col justify-center items-center bg-pink-100 bottom-3 text-center text-lg space-y-2">
+        <div>&copy;2025 · Built with curiosity and persistence</div>
+        <div className="space-x-2 text-lg w-full flex justify-end font-inter">
+          <a href="mailto:email@example.com" className="text-pink-400 hover:underline">Email</a>
           <span>|</span>
           <a href="#" className="text-pink-400 hover:underline">LinkedIn</a>
         </div>
