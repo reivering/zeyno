@@ -14,10 +14,27 @@ export default function Home() {
       <section className="w-full flex flex-col items-center mt-16 mb-8">
         <div className="text-pink-400 italic text-2xl font-semibold mb-2 mt-10">Zeyno</div>
         <h1 className="text-4xl md:text-5xl font-bold text-center mb-4 mt-2 text-black">ninte amma and ninte ammiamma in<br/>my room yes?</h1>
-        <div className="text-pink-400 text-base md:text-lg tracking-widest mb-10 text-center w-full">
+        <div className="text-pink-400 text-base md:text-lg tracking-widest mb-10 text-center w-full font-inter">
           DESIGN STRATEGIST &middot; SERVICE DESIGNER &middot; DESIGN STRATEGIST &middot; SERVICE DESIGNER &middot;
         </div>
-        <span className="animate-bounce text-4xl text-black mb-10">&#8595;</span>
+        <div className="animate-bounce mb-10">
+          <svg 
+            width="24" 
+            height="24" 
+            viewBox="0 0 24 24" 
+            fill="none" 
+            xmlns="http://www.w3.org/2000/svg"
+            className="text-black"
+          >
+            <path 
+              d="M6 9L12 15L18 9" 
+              stroke="currentColor" 
+              strokeWidth="2" 
+              strokeLinecap="round" 
+              strokeLinejoin="round"
+            />
+          </svg>
+        </div>
       </section>
 
       {/* Trifecta Section */}
@@ -34,7 +51,7 @@ export default function Home() {
               <div className="font-bold italic text-lg mb-2 text-center text-black">{card.title}</div>
               <ul className="list-disc pl-5 text-sm text-black">
                 {card.description.map((desc, i) => (
-                  <li key={i}>{desc}</li>
+                  <li className="font-geist" key={i}>{desc}</li>
                 ))}
               </ul>
             </div>

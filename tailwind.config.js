@@ -1,3 +1,5 @@
+const { Geist } = require('next/font/google');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -6,7 +8,13 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        playfair: ['var(--font-playfair-display)'],
+        geist: ['var(--font-geist)'],
+        inter: ['var(--font-inter)'],
+      },
+    },
   },
   plugins: [],
 }
