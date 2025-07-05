@@ -3,16 +3,16 @@ import React from "react";
 
 export default function Navbar() {
   return (
-    <nav className="w-full flex items-center justify-between py-4 px-8 bg-white border-b border-gray-100">
-      <div className="flex items-center">
-        <div className="w-14 h-14 font-inter text-[12px]  rounded-full border-2 border-black flex items-center justify-center text-xs font-bold tracking-widest bg-white">
+    <nav className="fixed top-0 left-0 w-full bg-black z-50">
+      <div className="mx-auto flex py-4 items-center justify-between" style={{ width: '70vw' }}>
+        <span className="font-extrabold text-white text-3xl tracking-tight" style={{ fontFamily: 'Inter, sans-serif' }}>
           ZEYNO
+        </span>
+        <div className="flex space-x-10 font-inter">
+          <a href="#about" className="text-white font-normal text-lg hover:underline transition-all">About</a>
+          <a href="#services" className="text-white font-normal text-lg hover:underline transition-all">Services</a>
+          <a href="#contact" className="text-white font-normal text-lg hover:underline transition-all">Contact</a>
         </div>
-      </div>
-      <div className="flex items-center space-x-8 text-base font-inter font-medium">
-        <a href="#" className="text-pink-400">HOME</a>
-        <a href="#" className="text-black hover:text-pink-400">PROJECTS</a>
-        <a href="#" className="text-black hover:text-pink-400">ABOUT</a>
       </div>
     </nav>
   );

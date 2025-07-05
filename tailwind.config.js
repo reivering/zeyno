@@ -13,6 +13,7 @@ module.exports = {
         playfair: ['var(--font-playfair-display)'],
         geist: ['var(--font-geist)'],
         inter: ['var(--font-inter)'],
+        suranna: ['var(--font-suranna)'],
       },
     },
   },
