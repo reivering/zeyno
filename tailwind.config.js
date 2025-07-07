@@ -14,6 +14,7 @@ module.exports = {
         geist: ['var(--font-geist)'],
         inter: ['var(--font-inter)'],
         suranna: ['var(--font-suranna)'],
+        syne: ['var(--font-syne)'],
       },
       animation: {
         first: "moveVertical 30s ease infinite",

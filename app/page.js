@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar";
-import Home from "../components/Home";
+import Home from "../components/pages/Home";
 import Footer from "../components/Footer";
+import About from "../components/pages/About";
 
 export default function Page() {
   return (
@@ -8,6 +9,7 @@ export default function Page() {
       <Navbar />
       <main className="flex-1">
         <Home />
+        <About />
       </main>
       <Footer />
     </div>

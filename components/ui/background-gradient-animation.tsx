@@ -3,14 +3,14 @@ import { cn } from "@/lib/utils";
 import { useEffect, useRef, useState } from "react";
 
 export const BackgroundGradientAnimation = ({
-  gradientBackgroundStart = "rgb(108, 0, 162)",
-  gradientBackgroundEnd = "rgb(0, 17, 82)",
-  firstColor = "18, 113, 255",
-  secondColor = "221, 74, 255",
-  thirdColor = "100, 220, 255",
-  fourthColor = "200, 50, 50",
-  fifthColor = "180, 180, 50",
-  pointerColor = "140, 100, 255",
+  gradientBackgroundStart = "rgb(1,1,10)",
+  gradientBackgroundEnd = "rgb(1,1, 0)",
+  firstColor = "1, 1, 1",
+  secondColor = "127, 219, 255",
+  thirdColor = "255, 127, 80",
+  fourthColor = "255, 140, 140",
+  fifthColor = "211, 100, 100",
+  pointerColor = "100, 155, 255",
   size = "80%",
   blendingValue = "hard-light",
   children,
@@ -63,11 +63,16 @@ export const BackgroundGradientAnimation = ({
       if (!interactiveRef.current) {
         return;
       }
-      setCurX(curX + (tgX - curX) / 20);
-      setCurY(curY + (tgY - curY) / 20);
-      interactiveRef.current.style.transform = `translate(${Math.round(
-        curX
-      )}px, ${Math.round(curY)}px)`;
+      setCurX(prevX => {
+        const newX = prevX + (tgX - prevX) / 20;
+        interactiveRef.current!.style.transform = `translate(${Math.round(newX)}px, ${Math.round(curY)}px)`;
+        return newX;
+      });
+      setCurY(prevY => {
+        const newY = prevY + (tgY - prevY) / 2;
+        interactiveRef.current!.style.transform = `translate(${Math.round(curX)}px, ${Math.round(newY)}px)`;
+        return newY;
+      });
     }
 
     move();
