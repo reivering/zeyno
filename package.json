@@ -9,19 +9,26 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@react-three/drei": "^10.4.4",
+    "@gsap/react": "^2.1.2",
+    "@react-three/drei": "^10.5.0",
     "@react-three/fiber": "^9.2.0",
+    "@thi.ng/color": "^5.7.42",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "framer-motion": "^12.19.2",
+    "glslify": "^7.1.1",
+    "glslify-loader": "^2.0.0",
     "gsap": "^3.13.0",
+    "leva": "^0.10.0",
     "lucide-react": "^0.523.0",
     "motion": "^12.23.0",
     "next": "15.3.4",
+    "raw-loader": "^4.0.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "tailwind-merge": "^3.3.1",
-    "tailwindcss": "^3.4.17"
+    "tailwindcss": "^3.4.17",
+    "three": "^0.178.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
