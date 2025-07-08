@@ -15,6 +15,8 @@ module.exports = {
         inter: ['var(--font-inter)'],
         suranna: ['var(--font-suranna)'],
         syne: ['var(--font-syne)'],
+        archivo: ['var(--font-archivo)'],
+        montserrat: ['var(--font-montserrat)'],
       },
       animation: {
         first: "moveVertical 30s ease infinite",
