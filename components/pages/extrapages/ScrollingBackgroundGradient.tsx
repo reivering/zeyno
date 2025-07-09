@@ -15,6 +15,9 @@ import vertexShader from './gradient.vert'
 
 // Component for rendering colourful animated gradient background that moves up and down with the user scroll
 
+
+
+
 // Remember to register GSAP plugins
 gsap.registerPlugin(useGSAP, ScrollTrigger)
 
@@ -134,9 +137,10 @@ function useConfig(): Config {
   const { paletteKey, timeMultiplier, scale, distortionIterations, distortionIntensity } = useControls({
     paletteKey: {
       label: 'Palette',
-      value: 'heat1' as CosineGradientPreset,
-      options: Object.keys(COSINE_GRADIENTS),
+      value: 'heat1',
+      options: [...Object.keys(COSINE_GRADIENTS), 'black-orange-cyan'], // Add your custom key here
     },
+    // ...other controls
     timeMultiplier: {
       label: 'Time Multiplier',
       value: 0.1,
@@ -153,22 +157,34 @@ function useConfig(): Config {
     },
     distortionIterations: {
       label: 'Iterations',
-      value: 6,
+      value: 0,
       min: 0,
       max: 14,
       step: 1,
     },
     distortionIntensity: {
       label: 'Intensity',
-      value: 0.3,
+      value: 0,
       min: 0,
       max: 1,
       step: 0.02,
       render: (get) => get('distortionIterations') > 0,
     },
-  })
+  });
 
-  const colourPaletteVec3 = COSINE_GRADIENTS[paletteKey as CosineGradientPreset].map((color) => new Vector3(...color))
+  const BLACK_ORANGE_CYAN = [
+    [1.2, 0.9, 0, 0],    // R: black (0), orange (1), cyan (0)
+    [1.3, 2.9, 1.1, 0],  // G: black (0), orange (0.5), cyan (1)
+    [1, 1, 1.1, 0],    // B: black (0), orange (0), cyan (1)
+    [1, 1, 1, 1],  
+  ];
+
+  const paletteMap = {
+    ...COSINE_GRADIENTS,
+    'black-orange-cyan': BLACK_ORANGE_CYAN,
+  };
+
+  const colourPaletteVec3 = paletteMap[paletteKey as CosineGradientPreset].map((color) => new Vector3(...color))
 
   return { colourPalette: colourPaletteVec3, timeMultiplier, scale, distortionIterations, distortionIntensity }
 }
@@ -186,8 +202,8 @@ export const ScrollBackgroundGradientCanvas: FC = () => {
         colourPalette={DEFAULT_COLOUR_PALETTE}
         timeMultiplier={0.2}
         scale={1}
-        distortionIterations={5}
-        distortionIntensity={0.3}
+        distortionIterations={0}
+        distortionIntensity={0}
       />
     </Canvas>
   )

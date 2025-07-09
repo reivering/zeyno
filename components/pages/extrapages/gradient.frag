@@ -8,8 +8,8 @@ uniform float uScrollProgress;
 // Config Uniforms
 uniform vec3 uColourPalette[4];
 uniform float uUvScale; // 1.0
-uniform float uUvDistortionIterations; // 4.0
-uniform float uUvDistortionIntensity; // 0.2
+uniform float uUvDistortionIterations; // 0
+uniform float uUvDistortionIntensity; // 0
 
 varying vec2 vUv;
 
