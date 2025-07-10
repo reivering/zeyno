@@ -1,26 +1,29 @@
 import React from "react";
-import { BackgroundGradientAnimation } from "../ui/background-gradient-animation";
 
 export default function Home() {
   return (
-    <BackgroundGradientAnimation>
-      <main className="flex flex-col items-center justify-center min-h-screen w-full pt-32">
-        <section className="flex flex-col items-center justify-center w-full">
-          <h1 className="text-white text-center text-5xl md:text-7xl font-suranna font-normal leading-tight mb-6">
-            We Craft<br />
-            Human-Centric<br />
-            Websites
-          </h1>
-          <button className="mt-2 px-6 py-2 border border-white text-white rounded-md hover:bg-white font-inter hover:text-black transition-all text-lg font-normal">
-            Book a Call
-          </button>
-        </section>
-        <section className="w-full mt-20">
-          <h2 className="text-white text-center text-3xl md:text-5xl font-inter font-normal tracking-tight">
-            High-converting. Lightning-fast. Seamlessly responsive.
-          </h2>
-        </section>
-      </main>
-    </BackgroundGradientAnimation>
+      <div className="w-[95vw] max-w-6xl mt-6 mb-6 rounded-none bg-[#fdf1e3] flex flex-col" style={{ boxShadow: '0 0 0 8px #232323' }}>
+        {/* Header */}
+        <div className="flex items-center justify-between w-full pt-6 px-8">
+          <span className="font-bold text-2xl text-[#f47c4c] tracking-tight" style={{ fontFamily: 'Inter, sans-serif', letterSpacing: '0.02em' }}>
+            <span className="block text-xs text-[#232323] font-normal mb-1" style={{ letterSpacing: '0.1em' }}>STUDIO</span>
+            zeyno
+          </span>
+          <nav className="flex space-x-8">
+            <a href="#about" className="text-[#f47c4c] text-base font-medium hover:underline">about</a>
+            <a href="#services" className="text-[#f47c4c] text-base font-medium hover:underline">services</a>
+            <a href="#contact" className="text-[#f47c4c] text-base font-medium hover:underline">contact</a>
+          </nav>
+        </div>
+        {/* Main Section */}
+        <div className="flex-1 flex flex-col justify-center items-center mt-8 mb-8">
+          <div className="w-full rounded-t-3xl bg-[#f47c4c] flex flex-col items-center justify-center py-16 px-4">
+            <h1 className="text-white text-4xl md:text-6xl font-extrabold text-center leading-tight" style={{ fontFamily: 'Inter, sans-serif', letterSpacing: '0.01em' }}>
+              WE CREATE SITES.<br />
+              REALLY GOOD ONE'S.
+            </h1>
+          </div>
+        </div>
+      </div>
   );
 } 

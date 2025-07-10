@@ -174,8 +174,8 @@ function useConfig(): Config {
 
   const BLACK_ORANGE_CYAN = [
     [1.2, 0.9, 0, 0],    // R: black (0), orange (1), cyan (0)
-    [1.3, 2.9, 1.1, 0],  // G: black (0), orange (0.5), cyan (1)
-    [1, 1, 1.1, 0],    // B: black (0), orange (0), cyan (1)
+    [1.3, 1, 1.1, 0],  // G: black (0), orange (0.5), cyan (1)
+    [1, 1, 1, 0],    // B: black (0), orange (0), cyan (1)
     [1, 1, 1, 1],  
   ];
 
