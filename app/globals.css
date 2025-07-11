@@ -2,14 +2,13 @@
 @tailwind components;
 @tailwind utilities; 
 
-:root {
   :root {
-    --color-base: #f47c4c;
+    --color-base: #f2805b;
     --color-secondary: #232323;
     --color-background: #fdf1e3;
     --color-text: white ;
   }
-  }
+
   
   @media (prefers-color-scheme: dark) {
     :root {
