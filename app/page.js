@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import About from "../components/pages/About";
 import GradientBetween from "@/components/pages/GradientBlend";
 import Services from "@/components/pages/Services";
+import Contact from "@/components/pages/Contact";
 
 export default function Page() {
   return (
@@ -13,7 +14,7 @@ export default function Page() {
         <GradientBetween />
         <About />
         <Services />
-      
+        <Contact />
       <Footer />
     </div>
   );

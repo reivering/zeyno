@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function Home() {
   return (
-      <div className=" rounded-none h-[93vh] bg-background flex flex-col" >
+      <div className=" rounded-none h-[92vh] bg-background flex flex-col" >
         {/* Header */}
 
         {/* Main Section */}
