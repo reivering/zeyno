@@ -3,7 +3,7 @@ import { BackgroundGradientAnimation } from "../ui/background-gradient-animation
 
 const About = () => {
   return (
-      <main id="about" className="flex flex-col items-center bg-background justify-center min-h-screen w-full pt-32">
+      <main id="about" className="flex  flex-col items-center bg-background justify-center min-h-screen w-full">
         <section className="w-[85vw] h-[75vh] border bg-black flex items-center px-4 rounded-[5vw]">
           <div className="flex border-r w-[55%] h-[75%] ml-24 flex items-center" >
             <h1 className="text-white  text-4xl md:text-4xl lg:text-[3vw] font-inter font-extralight leading-snug  mb-16 " style={{lineHeight: "0.9em"}}>

@@ -4,11 +4,11 @@ import { motion } from "framer-motion";
 
 export default function Home() {
   return (
-      <div className=" rounded-none bg-background flex flex-col h-[100vh]" >
+      <div className=" rounded-none h-[93vh] bg-background flex flex-col" >
         {/* Header */}
 
         {/* Main Section */}
-        <div className="flex-1 flex flex-col justify-center items-center mt-8 mb-8">
+        <div className="flex-1 flex flex-col justify-center items-center">
           <motion.div className="w-full rounded-t-[4vw] bg-base absolute bottom-0 h-[45vh] items-center justify-center py-16 px-24"
             initial={{ y: "45vh", }}
             animate={{ y: 0 }}
