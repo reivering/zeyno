@@ -7,15 +7,17 @@ export default function Footer() {
     <div className="h-[50vh] relative w-full font-inter bg-neutral-900"> 
       <div className="flex justify-evenly mt-12">
         <div className="h-[30vh] w-[22%] flex justify-center">
-          <Image className="mb-20" src="/studiozeyno.svg" width='300' height="20" alt="ZeynoLogo" />
+          <a href="#">
+            <Image className="mb-20"  src="/studiozeyno.svg" width='300' height="20" alt="ZeynoLogo" />
+          </a>
         </div> 
         {/* Midsection Links */}
         <div className="h-[30vh] w-[26%]  flex p-4 text-white justify-between">
           <div className="flex flex-col  p-4 gap-4">
             <h1 className="text-[var(--color-base)] text-4xl font-montserrat">Agency</h1>
-            <p className="font-extralight text-xl">About</p>
-            <p className="font-extralight text-xl">Services</p>
-            <p className="font-extralight text-xl">Contact</p>
+            <p className="font-extralight text-xl"><a href="#about">About</a></p>
+            <p className="font-extralight text-xl"><a href="#services">Services</a></p>
+            <p className="font-extralight text-xl"><a href="#contact">Contact</a></p>
           </div>
           <div className="flex flex-col  p-4 gap-4">
             <h1 className="text-[var(--color-base)] text-4xl font-montserrat">Contact</h1>
