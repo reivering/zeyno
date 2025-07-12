@@ -1,5 +1,6 @@
 import React from "react";
 import { BackgroundGradientAnimation } from "../ui/background-gradient-animation";
+import Image from "next/image";
 
 const About = () => {
   return (
@@ -17,11 +18,10 @@ const About = () => {
 
           <div className="flex flex-col items-center justify-center  w-[35%] h-[75%]">
             <div className="flex flex-col  p-12" >
-              <span className="text-base pl-1 text-[30px] font-inter font-normal tracking-widest mb-1">STUDIO</span>
-              <span className="text-white text-8xl font-bold mb-4 font-inter" style={{lineHeight: "0.5em"}}>zeyno</span>
+              <Image width="360" height="200" src="/studiozeyno.svg" alt="zeynologo" />
             </div>
-            <span className="text-lg font-inter font-light text-white mt-2">
-              a <span className="text-[#f47c4c]">creative</span> agency
+            <span className="text-xl font-inter font-light text-white mt-2">
+              a <span className="text-[var(--color-base)]">creative</span> agency
             </span>
           </div>
           
