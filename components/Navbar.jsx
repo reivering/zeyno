@@ -7,12 +7,12 @@ export default function Navbar() {
     <nav className="bg-background top-0 left-0 w-full z-50">
       <div className="mx-auto flex py-4 items-center justify-between w-[80vw]" >
       <span className="font-bold  text-2xl tracking-tight font-inter"  >
-        <Image width="120" height="20" src="/zeynoinvert.png" alt="zeynoinverted" />
+        <Image width="140" height="20" src="/zeynoinvert.png" alt="zeynoinverted" />
       </span>
         <nav className="flex space-x-8 font-inter text-base">
-            <a href="#about" className=" text-lg font-medium hover:underline">about</a>
-            <a href="#services" className=" text-lg font-medium hover:underline">services</a>
-            <a href="#contact" className=" text-lg font-medium hover:underline">contact</a>
+            <a href="#about" className=" text-xl font-medium hover:underline">about</a>
+            <a href="#services" className=" text-xl font-medium hover:underline">services</a>
+            <a href="#contact" className=" text-xl font-medium hover:underline">contact</a>
           </nav>
       </div>
     </nav>
