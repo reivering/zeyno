@@ -7,7 +7,7 @@ const Contact = () => {
         <div className='relative bg-background w-[84vw] h-[80vh] rounded-[4vw]'>
             {/* Paragraph */}
             <div className='m-20  h-[50%] w-[64%] flex items-center' >
-                <h1 className='p-2 text-5xl font-light' style={{lineHeight: "1.2em"}}>To reach out with any project queries, you can write to us at <span className='font-bold'>studiozeyno@gmail.com</span> and
+                <h1 className='p-2 text-5xl font-light' style={{lineHeight: "1.2em"}}>To reach out with any project queries, you can write to us at <span className='font-bold'>contactzeyno@gmail.com</span> and
                     we'll be in touch shortly.
                 </h1>
             </div>
