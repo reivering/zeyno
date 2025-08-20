@@ -14,13 +14,19 @@ const Contact = () => {
 
             {/* Lets talk section */}
             <div className='absolute bottom-[5vh] w-full flex justify pl-20'>
-                <div className='mb-4 flex justify-between w-[95%]'>
+                <a
+                  href="https://tally.so/r/3NjExl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Open contact form on Tally"
+                  className='mb-4 flex justify-between w-[95%] cursor-pointer'
+                >
                     <div className=''>
                         <p className='text-4xl font-light pb-3'>Got a <span className='text-4xl font-light text-[var(--color-base)]'>project</span> in mind?</p>
                         <h1 className='text-8xl text-black font-bold'>LET'S TALK</h1>
                     </div>
                     <span className='text-8xl text-[var(--color-base)] pt-12'><MdArrowOutward /></span>
-                </div>
+                </a>
                 <div className='absolute bottom-2 border-2 border-white h-[8%] w-[90%] bg-black' />
             </div>
         </div>
