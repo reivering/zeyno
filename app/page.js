@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar";
 import Home from "../components/pages/Home";
 import Footer from "../components/Footer";
 import About from "../components/pages/About";
+import ServicesTrifecta from "@/components/pages/ServicesTrifecta";
 import Services from "@/components/pages/Services";
 import Contact from "@/components/pages/Contact";
 
@@ -11,6 +12,7 @@ export default function Page() {
       <Navbar />
         <Home />
         <About />
+        <ServicesTrifecta />
         <Services />
         <Contact />
       <Footer />
