@@ -62,30 +62,29 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="bg-base h-screen py-16 px-4 font-sans">
-                {/* Header */}
-                <div className='flex flex-col sm:flex-row justify-between items-start sm:items-end space-y-4 sm:space-y-0'>
-                    <div className='w-full sm:w-[60%] md:w-[50%] lg:w-[40%] xl:w-[30%] p-4 sm:p-6 md:p-8 lg:p-10 flex flex-col items-start sm:items-end'>
-                        <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-background 2xl:text-8xl font-semibold font-inter' style={{lineHeight: "0.9em"}}>services</h1>
-                        <p className='font-extrabold text-sm sm:text- md:text-lg lg:text-xl'>WE OFFER</p>
-                    </div>
-
-                </div>
-        
-      <div className="w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-32">
+    <section className="w-full min-h-screen font-inter px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 bg-background py-8 sm:py-12 md:py-16">
+      {/* Header */}
+      <div className='flex flex-col sm:flex-row justify-between items-start sm:items-end space-y-4 sm:space-y-0'>
+        <div className='w-full sm:w-[60%] md:w-[50%] lg:w-[40%] xl:w-[30%] p-4 sm:p-6 md:p-8 lg:p-10 flex flex-col items-start sm:items-end'>
+          <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-semibold' style={{lineHeight: "0.9em"}}>services</h1>
+          <p className='font-extrabold text-sm sm:text-base md:text-lg lg:text-xl'>WE OFFER</p>
+        </div>
+      </div>
+      {/* Cards */}
+      <div className="flex flex-col lg:flex-row justify-center p-2 sm:p-4 mt-[2vh] sm:mt-[3vh] w-full h-auto gap-4 sm:gap-6 md:gap-8 lg:gap-12 xl:gap-16">
         {services.map((service, idx) => (
           <div
             key={idx}
-            className="flex flex-col items-start bg-background rounded-[4vh] shadow-[0_4px_24px_0_rgba(30,34,40,0.07)] p-10 transition-shadow hover:shadow-[0_8px_32px_0_rgba(30,34,40,0.12)]"
+            className="w-full lg:w-[400px] xl:w-[450px] 2xl:w-[500px] rounded-[4vh] sm:rounded-[5vh] md:rounded-[6vh] lg:rounded-[7vh] bg-white flex flex-col p-6 sm:p-8 md:p-10 lg:p-12 xl:p-14 shadow-[0_4px_24px_0_rgba(30,34,40,0.07)] transition-shadow hover:shadow-[0_8px_32px_0_rgba(30,34,40,0.12)]"
           >
             <div className="mb-6 self-center">{service.icon}</div>
             <h3 className="text-[#111] font-bold text-2xl mb-3 w-full text-center">{service.title}</h3>
-            <p className="text-[#555] text-base font-normal mb-6 leading-relaxed w-full text-center">{service.description}</p>
+            <p className="text-[#555] font-normal mb-6 leading-relaxed w-full text-center">{service.description}</p>
             <div className="mb-8 w-full">
               <span className="block text-[#111] font-semibold text-xl mb-2">Key Features:</span>
               <ul className="pl-5 m-0 list-disc">
                 {service.features.map((feature, i) => (
-                  <li key={i} className="text-[#222] text-base text-lg mb-1">{feature}</li>
+                  <li key={i} className="text-[#222] text-lg mb-1">{feature}</li>
                 ))}
               </ul>
             </div>
