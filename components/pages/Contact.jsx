@@ -15,7 +15,7 @@ const Contact = () => {
             </div>
 
             {/* Lets talk section */}
-            <div className='absolute bottom-[2vh] sm:bottom-[3vh] md:bottom-[5vh] w-full flex justify-center sm:justify-start sm:pl-8 md:pl-20'>
+            <div className='absolute bottom-[2vh] sm:bottom-[3vh] md:bottom-[5vh] w-full flex justify-center sm:justify-start sm:pl-8 md:pl-20 cursor-pointer'>
                 <a
                   href="https://tally.so/r/3NjExl"
                   target="_blank"
@@ -29,11 +29,11 @@ const Contact = () => {
                             <span className='font-light text-[var(--color-base)]'>project</span>{' '}
                             in mind?
                         </p>
-                        <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-black font-bold leading-tight sm:leading-snug'>
+                        <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-black transition-colors duration-450 hover:text-[#333] font-bold leading-tight sm:leading-snug'>
                             LET'S TALK
                         </h1>
                     </div>
-                    <span className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-8xl text-[var(--color-base)] sm:pt-6 md:pt-12'>
+                    <span className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-8xl text-[var(--color-base)] transition-colors duration-450 hover:text-[#fa8] sm:pt-6 md:pt-12'>
                         <MdArrowOutward />
                     </span>
                 </a>
