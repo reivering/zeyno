@@ -7,7 +7,7 @@ import About from "../components/pages/About";
 import ServicesTrifecta from "@/components/pages/ServicesTrifecta";
 import Services from "@/components/pages/Services";
 import Contact from "@/components/pages/Contact";
-import IntroScreen from "@/components/IntroScreen";
+import IntroScreen from "@/components/pages/IntroScreen";
 
 export default function Page() {
   const [introDone, setIntroDone] = useState(false);

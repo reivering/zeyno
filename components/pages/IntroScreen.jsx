@@ -25,7 +25,7 @@ export default function IntroScreen() {
 
   return (
     <div
-      className={`fixed inset-0 z-50 flex items-center justify-center bg-black text-white transition-transform duration-[1200ms] ease-in-out ${
+      className={`fixed inset-0 z-50 flex items-center justify-center bg-base text-white transition-transform duration-[1200ms] ease-in-out ${
         animateLift ? '-translate-y-full' : 'translate-y-0'
       }`}
     >
@@ -34,8 +34,8 @@ export default function IntroScreen() {
 
 
         <SplitText
-        text="Hello, GSAP!"
-        className="text-2xl font-semibold text-center"
+        text="&copy; ZEYNO 2025"
+        className="text-6xl font-semibold font-inter text-center"
         delay={100}
         duration={0.6}
         ease="power3.out"
