@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Navbar() {
   return (
-    <nav className="absolute top-0 left-0 w-full z-50 bg-background/70 backdrop-blur-md">
+    <nav className="absolute top-0 left-0 w-full z-50 bg-background/10 backdrop-blur-lg">
       <div className="mx-auto flex flex-col sm:flex-row py-2 sm:py-4 items-center justify-between w-full sm:w-[90vw] md:w-[85vw] lg:w-[80vw] px-4 sm:px-6 md:px-8 space-y-2 sm:space-y-0">
         <span className="font-bold text-xl sm:text-2xl tracking-tight font-inter">
           <Image 

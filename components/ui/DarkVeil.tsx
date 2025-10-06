@@ -69,6 +69,7 @@ void main(){
     float scanline_val=sin(gl_FragCoord.y*uScanFreq)*0.5+0.5;
     col.rgb*=1.-(scanline_val*scanline_val)*uScan;
     col.rgb+=(rand(gl_FragCoord.xy+uTime)-0.5)*uNoise;
+    col.rgb = 1.0 - col.rgb;
     gl_FragColor=vec4(clamp(col.rgb,0.0,1.0),1.0);
 }
 `;
@@ -84,13 +85,13 @@ type Props = {
 };
 
 export default function DarkVeil({
-  hueShift = 216,
+  hueShift = 40,
   noiseIntensity = 0.1,
   scanlineIntensity = 0,
-  speed = 0.7,
+  speed = 0.5,
   scanlineFrequency = 0,
-  warpAmount = 4,
-  resolutionScale = 2
+  warpAmount = 5,
+  resolutionScale = 2.2
 }: Props) {
   const ref = useRef<HTMLCanvasElement>(null);
   useEffect(() => {
