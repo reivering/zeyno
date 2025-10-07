@@ -122,6 +122,18 @@ export default function DarkVeil({
 
     const mesh = new Mesh(gl, { geometry, program });
 
+    // ✅ Control transparency & depth the OGL way
+    gl.enable(gl.BLEND);
+    gl.blendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA);
+
+    // Prevent writing to depth buffer (so it never occludes text)
+    gl.disable(gl.DEPTH_TEST);
+    gl.depthMask(false);
+
+    
+
+    gl.clearColor(1, 1, 1, 1);
+
     const resize = () => {
       const w = parent.clientWidth,
         h = parent.clientHeight;
@@ -153,5 +165,5 @@ export default function DarkVeil({
       window.removeEventListener('resize', resize);
     };
   }, [hueShift, noiseIntensity, scanlineIntensity, speed, scanlineFrequency, warpAmount, resolutionScale]);
-  return <canvas ref={ref} className="w-full h-full block" />;
+  return <canvas ref={ref} className="absolute inset-0 w-full h-full block pointer-events-none z-0" />;
 }

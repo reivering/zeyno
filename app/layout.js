@@ -1,5 +1,5 @@
 import "./globals.css";
-import { Playfair_Display, Geist, Inter, Suranna, Archivo_Black, Syne, Archivo, Montserrat } from 'next/font/google';
+import { Playfair_Display, Geist, Inter, Arimo, Archivo_Black, Syne, Archivo, Montserrat } from 'next/font/google';
 
 const playfairDisplay = Playfair_Display({
   subsets: ['latin'],
@@ -38,11 +38,10 @@ const inter = Inter({
   variable: '--font-inter',
 });
 
-const suranna = Suranna({
+const arimo = Arimo({
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-suranna',
-  weight: '400',
+  variable: '--font-arima',
 });
 
 export const metadata = {

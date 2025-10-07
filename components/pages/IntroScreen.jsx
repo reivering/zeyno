@@ -34,8 +34,8 @@ export default function IntroScreen() {
 
 
         <SplitText
-        text="&copy; ZEYNO 2025"
-        className="text-6xl font-semibold font-inter text-center"
+        text="Zeyno"
+        className="text-[10vh] font-bold mb-24 font-inter text-center"
         delay={100}
         duration={0.6}
         ease="power3.out"
