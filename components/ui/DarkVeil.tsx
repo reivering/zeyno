@@ -88,10 +88,10 @@ export default function DarkVeil({
   hueShift = 40,
   noiseIntensity = 0.1,
   scanlineIntensity = 0,
-  speed = 0.5,
+  speed = 0.6,
   scanlineFrequency = 0,
   warpAmount = 5,
-  resolutionScale = 2.2
+  resolutionScale = 2.1
 }: Props) {
   const ref = useRef<HTMLCanvasElement>(null);
   useEffect(() => {

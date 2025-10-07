@@ -35,7 +35,7 @@ export default function IntroScreen() {
 
         <SplitText
         text="Zeyno"
-        className="text-[10vh] font-bold mb-24 font-inter text-center"
+        className="text-[12vh] font-bold mb-24 font-raleway text-center"
         delay={100}
         duration={0.6}
         ease="power3.out"

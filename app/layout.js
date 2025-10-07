@@ -1,5 +1,5 @@
 import "./globals.css";
-import { Playfair_Display, Geist, Inter, Arimo, Archivo_Black, Syne, Archivo, Montserrat } from 'next/font/google';
+import { Playfair_Display, Geist, Inter, Arimo, Archivo_Black, Syne, Raleway, Work_Sans, Montserrat } from 'next/font/google';
 
 const playfairDisplay = Playfair_Display({
   subsets: ['latin'],
@@ -25,6 +25,18 @@ const syne = Syne({
   display: 'swap',
   variable: '--font-syne',
 });
+
+const raleway = Raleway({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-raleway'
+})
+
+const work_sans = Work_Sans({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-worksans'
+})
 
 const geist = Geist({
   subsets: ['latin'],
@@ -52,7 +64,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${playfairDisplay.variable} ${geist.variable} ${inter.variable} ${suranna.variable} ${syne.variable} ${archivo.variable} ${montserrat.variable} text-black bg-white min-h-screen`}>{children}</body>
+      <body className={`${playfairDisplay.variable} ${work_sans.variable} ${raleway.variable} ${arimo.variable} ${geist.variable} ${inter.variable} ${syne.variable} ${archivo.variable} ${montserrat.variable} text-black bg-white min-h-screen`}>{children}</body>
     </html>
   );
 } 

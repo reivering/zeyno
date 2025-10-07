@@ -23,6 +23,9 @@ module.exports = {
         syne: ['var(--font-syne)'],
         archivo: ['var(--font-archivo)'],
         montserrat: ['var(--font-montserrat)'],
+        arimo: ['var(--font-arima)'],
+        worksans: ['var(--font-worksans)'],
+        raleway: ['var(--font-raleway)']
       },
       animation: {
         first: "moveVertical 30s ease infinite",

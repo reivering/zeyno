@@ -31,15 +31,7 @@ export default function Home() {
           </button>
         </div>
       </div>
-      {/* Demo Content Toggle */}
-      <div className="absolute bottom-8 right-8 flex items-center gap-2 z-10">
-        <span className="text-white/70 font-medium text-base">Demo Content</span>
-        <label className="relative inline-flex items-center cursor-pointer">
-          <input type="checkbox" className="sr-only peer" />
-          <div className="w-10 h-6 bg-white/20 rounded-full peer peer-checked:bg-white/40 transition"></div>
-          <div className="absolute left-1 top-1 bg-white/80 w-4 h-4 rounded-full transition peer-checked:translate-x-4"></div>
-        </label>
-      </div>
+      
     </div>
   );
 }
