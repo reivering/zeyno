@@ -9,7 +9,7 @@ const Contact = () => {
             <div className='m-4 sm:m-8 md:m-20 h-[40%] sm:h-[45%] md:h-[50%] w-full sm:w-[80%] md:w-[64%] flex items-center' >
                 <h1 className='p-2 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-light leading-tight sm:leading-snug md:leading-normal' style={{lineHeight: "1.2em"}}>
                     To reach out with any project queries, you can write to us at{' '}
-                    <span className='font-bold break-all sm:break-normal'>contactszeyno@gmail.com</span>{' '}
+                    <span className='font-bold break-all sm:break-normal'>contactzeyno@gmail.com</span>{' '}
                     and we'll be in touch shortly.
                 </h1>
             </div>
