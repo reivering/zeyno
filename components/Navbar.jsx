@@ -16,8 +16,8 @@ export default function Navbar() {
           />
         </span>
         <nav className="flex space-x-4 sm:space-x-6 md:space-x-8 font-inter text-sm sm:text-base md:text-lg lg:text-xl">
-          <a href="#about" className="font-medium hover:underline">about</a>
-          <a href="#services" className="font-medium hover:underline">services</a>
+          <a href="/#about" className="font-medium hover:underline">about</a>
+          <a href="/#services" className="font-medium hover:underline">services</a>
           <a href="#contact" className="font-medium hover:underline">contact</a>
         </nav>
       </div>

@@ -13,8 +13,10 @@ const ServicesTrifecta = () => {
           <p className='font-extrabold text-sm sm:text-base md:text-lg lg:text-xl'>We Follow</p>
         </div>
         <div className='flex items-center sm:items-end gap-2 sm:gap-3 mr-0 sm:mr-8 md:mr-12 lg:mr-16 cursor-pointer'>
-          <h1 className='p-2 sm:p-3 bg-black rounded-full text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-[var(--color-base)] font-extralight px-4 sm:px-6 md:px-8'>know more</h1>
-          <span className='p-2 sm:p-3 bg-black rounded-full text-xl sm:text-2xl md:text-3xl lg:text-4xl font-normal text-[var(--color-base)]'><MdArrowOutward /></span>
+          <a href='/portfolios ' className='flex items-center space-x-2 sm:space-x-3 hover:underline'>
+            <h1 className='p-2 sm:p-3 bg-black rounded-full text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-[var(--color-base)] font-extralight px-4 sm:px-6 md:px-8'>know more</h1>
+            <span className='p-2 sm:p-3 bg-black rounded-full text-xl sm:text-2xl md:text-3xl lg:text-4xl font-normal text-[var(--color-base)]'><MdArrowOutward /></span>
+          </a>
         </div>
       </div>
 
