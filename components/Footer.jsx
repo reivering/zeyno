@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="flex flex-col items-center gap-10 md:flex-row md:justify-evenly md:mt-12">
         {/* Logo */}
         <div className="flex justify-center w-2/3 md:w-[22%] md:h-[30vh]">
-          <a href="#">
+          <a href="/">
             <Image
               className="mb-6 md:mb-20"
               src="/studiozeyno.svg"
