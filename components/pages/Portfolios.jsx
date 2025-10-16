@@ -41,7 +41,7 @@ const Portfolios = () => {
             key={idx}
             className={` `}
           >
-            <div className='bg-base p-[2.5vh] rounded-[0.5vh]'> <a href={`${item.link}`}>
+            <div className='bg-base p-[2.5vh] rounded-[0.5vh]'> <a href={`${item.link} `} target="_blank">
               <Image src={item.image} alt={item.name} width={1200} height={1000} className='w-full h-auto' /></a>
             </div>
             <h2 className='text-2xl text-center mt-10 sm:text-3xl md:text-4xl lg:text-4xl font-bold mb-2'>{item.name}</h2>
