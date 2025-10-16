@@ -9,12 +9,12 @@ const ServicesTrifecta = () => {
       {/* Header */}
       <div className='flex flex-col sm:flex-row justify-between items-start sm:items-end space-y-4 sm:space-y-0'>
         <div className='w-full sm:w-[60%] md:w-[50%] lg:w-[40%] xl:w-[30%] p-4 sm:p-6 md:p-8 lg:p-10 flex flex-col items-start sm:items-end'>
-          <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-semibold' style={{ lineHeight: "0.9em" }}>DESIGN TRIFECTA</h1>
-          <p className='font-extrabold text-sm sm:text-base md:text-lg lg:text-xl'>We Follow</p>
+          <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-semibold' style={{ lineHeight: "0.9em" }}>design trifecta</h1>
+          <p className='font-extrabold text-sm text-base md:text-lg lg:text-xl'>We Follow</p>
         </div>
         <div className='flex items-center sm:items-end gap-2 sm:gap-3 mr-0 sm:mr-8 md:mr-12 lg:mr-16 cursor-pointer'>
           <a href='/portfolios ' className='flex items-center space-x-2 sm:space-x-3 hover:underline'>
-            <h1 className='p-2 sm:p-3 bg-black rounded-full text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-[var(--color-base)] font-extralight px-4 sm:px-6 md:px-8'>know more</h1>
+            <h1 className='p-2 sm:p-3 bg-black rounded-full text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-[var(--color-base)] font-extralight px-4 sm:px-6 md:px-8'>meet our team</h1>
             <span className='p-2 sm:p-3 bg-black rounded-full text-xl sm:text-2xl md:text-3xl lg:text-4xl font-normal text-[var(--color-base)]'><MdArrowOutward /></span>
           </a>
         </div>

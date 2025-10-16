@@ -67,7 +67,7 @@ const Services = () => {
       <div className='flex flex-col sm:flex-row justify-between items-start sm:items-end space-y-4 sm:space-y-0'>
         <div className='w-full sm:w-[60%] md:w-[50%] lg:w-[40%] xl:w-[30%] p-4 sm:p-6 md:p-8 lg:p-10 flex flex-col items-start sm:items-end'>
           <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-semibold' style={{lineHeight: "0.9em"}}>services</h1>
-          <p className='font-extrabold text-sm sm:text-base md:text-lg lg:text-xl'>WE OFFER</p>
+          <p className='font-extrabold text-sm text-base md:text-lg lg:text-xl'>WE OFFER</p>
         </div>
       </div>
       {/* Cards */}
