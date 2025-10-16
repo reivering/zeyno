@@ -62,7 +62,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <meta name="google-site-verification" content="google202ef2826eb743db.html.html" />
+        <meta name="google-site-verification" content="google202ef2826eb743db.html" />
       </head>
       <body className={`${playfairDisplay.variable} ${work_sans.variable} ${raleway.variable} ${geist.variable} ${inter.variable} ${syne.variable} ${archivo.variable} ${montserrat.variable} text-black bg-white min-h-screen`}>{children}</body>
     </html>
