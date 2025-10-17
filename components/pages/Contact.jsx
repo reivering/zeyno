@@ -17,7 +17,7 @@ const Contact = () => {
             {/* Lets talk section */}
             <div className='absolute bottom-[2vh] sm:bottom-[3vh] md:bottom-[5vh] w-full flex justify-center sm:justify-start sm:pl-8 md:pl-20 cursor-pointer'>
                 <a
-                  href="https://tally.so/r/3NjExl"
+                  href="https://tally.so/r/nGM2Po"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Open contact form on Tally"
