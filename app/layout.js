@@ -1,4 +1,5 @@
 
+import { icons } from "lucide-react";
 import "./globals.css";
 import { Playfair_Display, Geist, Inter, Archivo_Black, Syne, Raleway, Work_Sans, Montserrat } from 'next/font/google';
 
@@ -55,7 +56,10 @@ const inter = Inter({
 export const metadata = {
   title: 'Zeyno Studios',
   description: 'Welcome to Zeyno Studios - Crafting Stunning Websites with Cutting-Edge Design and Development.',
-  keywords: 'design, web development, portfolio, zeyno',
+  keywords: 'design, web development, portfolio, websites, digital solutions, responsive design, UI/UX, web services, creative agency',
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
 
 export default function RootLayout({ children }) {
