@@ -12,7 +12,7 @@ export default function Home() {
       <div className="relative z-10 flex flex-col items-center w-full">
         {/* New Background Button */}
         <div className="mb-8 mt-20">
-          <button className="px-6 py-2 rounded-full bg-base border border-white/30 text-white font-medium text-md backdrop-blur-md shadow-md hover:bg-black/20 transition">
+          <button className="px-8 py-3 rounded-full bg-base border border-white/30 text-white font-medium text-lg backdrop-blur-md shadow-md hover:bg-black/20 transition">
             <a href="#about">Take a tour</a>
             
           </button>
