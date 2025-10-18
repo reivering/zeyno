@@ -20,7 +20,7 @@ const portfolios = [
     image: "/portfolio/allen.png",
     name: "Allen George Thomas",
     role: "Founder | Lead Designer",
-    link: ""
+    link: "https://www.virtusco.in/founders/allen-george-thomas"
   },
 ];
 
