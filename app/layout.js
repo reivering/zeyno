@@ -56,7 +56,7 @@ const inter = Inter({
 export const metadata = {
   title: 'Zeyno Studios',
   description: 'Welcome to Zeyno Studios - Crafting Stunning Websites with Cutting-Edge Design and Development.',
-  keywords: 'design, web development, portfolio, websites, digital solutions, responsive design, UI/UX, web services, creative agency',
+  keywords: 'design, web development, portfolio, websites, digital solutions, responsive design, UI/UX, web services, creative agency,studio zeyno',
   icons: {
     icon: '/favicon.ico',
   },
