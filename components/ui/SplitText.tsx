@@ -94,6 +94,7 @@ const SplitText: React.FC<SplitTextProps> = ({
         reduceWhiteSpace: false,
         onSplit: (self: GSAPSplitText) => {
           assignTargets(self);
+          el.style.opacity = '1'; // 👈 reveal parent just before letters animate
           return gsap.fromTo(
             targets,
             { ...from },
@@ -155,7 +156,8 @@ const SplitText: React.FC<SplitTextProps> = ({
       display: 'inline-block',
       whiteSpace: 'normal',
       wordWrap: 'break-word',
-      willChange: 'transform, opacity'
+      willChange: 'transform, opacity',
+      opacity: 0, // Start hidden to prevent FOUC
     };
     const classes = `split-parent ${className}`;
     switch (tag) {

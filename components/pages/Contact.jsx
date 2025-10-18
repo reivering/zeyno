@@ -6,10 +6,10 @@ const Contact = () => {
     <div id="contact" className='min-h-screen font-inter w-full bg-black flex justify-center items-center px-4 sm:px-6 md:px-8'>
         <div className='relative bg-background w-full sm:w-[90vw] md:w-[84vw] h-[90vh] sm:h-[85vh] md:h-[80vh] rounded-[8vw] sm:rounded-[6vw] md:rounded-[4vw]'>
             {/* Paragraph */}
-            <div className='m-4 sm:m-8 md:m-20 h-[40%] sm:h-[45%] md:h-[50%] w-full sm:w-[80%] md:w-[64%] flex items-center' >
+            <div className='p-6 sm:m-8 md:m-20 h-[40%] sm:h-[45%] md:h-[50%] w-full sm:w-[80%] md:w-[64%] flex items-center' >
                 <h1 className='p-2 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-light leading-tight sm:leading-snug md:leading-normal' style={{lineHeight: "1.2em"}}>
                     To reach out with any project queries, you can write to us at{' '}
-                    <span className='font-bold break-all sm:break-normal'>contactzeyno@gmail.com</span>{' '}
+                    <span className='font-bold '>contactzeyno@gmail.com</span>{' '}
                     and we'll be in touch shortly.
                 </h1>
             </div>
@@ -17,7 +17,7 @@ const Contact = () => {
             {/* Lets talk section */}
             <div className='absolute bottom-[2vh] sm:bottom-[3vh] md:bottom-[5vh] w-full flex justify-center sm:justify-start sm:pl-8 md:pl-20 cursor-pointer'>
                 <a
-                  href="https://tally.so/r/3NjExl"
+                  href="https://tally.so/r/nGM2Po"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Open contact form on Tally"

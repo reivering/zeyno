@@ -1,5 +1,7 @@
+
+import { icons } from "lucide-react";
 import "./globals.css";
-import { Playfair_Display, Geist, Inter, Arimo, Archivo_Black, Syne, Raleway, Work_Sans, Montserrat } from 'next/font/google';
+import { Playfair_Display, Geist, Inter, Archivo_Black, Syne, Raleway, Work_Sans, Montserrat } from 'next/font/google';
 
 const playfairDisplay = Playfair_Display({
   subsets: ['latin'],
@@ -50,21 +52,23 @@ const inter = Inter({
   variable: '--font-inter',
 });
 
-const arimo = Arimo({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-arima',
-});
 
 export const metadata = {
-  title: 'Zeyno',
-  description: 'Portfolio',
+  title: 'Zeyno Studios',
+  description: 'Welcome to Zeyno Studios - Crafting Stunning Websites with Cutting-Edge Design and Development.',
+  keywords: 'design, web development, portfolio, websites, digital solutions, responsive design, UI/UX, web services, creative agency',
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${playfairDisplay.variable} ${work_sans.variable} ${raleway.variable} ${arimo.variable} ${geist.variable} ${inter.variable} ${syne.variable} ${archivo.variable} ${montserrat.variable} text-black bg-white min-h-screen`}>{children}</body>
+      <head>
+        <meta name="google-site-verification" content="L4zETxnK9VGFluXF257rC03-BQ-pp9Z0ixDCoVLD51g" />
+      </head>
+      <body className={`${playfairDisplay.variable} ${work_sans.variable} ${raleway.variable} ${geist.variable} ${inter.variable} ${syne.variable} ${archivo.variable} ${montserrat.variable} text-black bg-white min-h-screen`}>{children}</body>
     </html>
   );
 } 

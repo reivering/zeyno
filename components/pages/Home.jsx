@@ -18,18 +18,9 @@ export default function Home() {
           </button>
         </div>
         {/* Main Heading */}
-        <h1 className="text-base text-4xl sm:text-5xl md:text-6xl font-bold text-center leading-tight mb-8 font-inter">
+        <h1 className="text-base text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-center leading-tight mb-8 font-inter">
           WE CREATE SITES.<br />REALLY GOOD ONES.
         </h1>
-        {/* Buttons */}
-        <div className="flex gap-4 mb-2">
-          <button className="px-8 py-3 rounded-full bg-white text-[#222] font-medium text-lg shadow hover:bg-gray-100 transition">
-            Get Started
-          </button>
-          <button className="px-8 py-3 rounded-full bg-white/10 border border-base text-base font-medium text-lg hover:bg-white/20 transition">
-            Learn More
-          </button>
-        </div>
       </div>
       
     </div>
