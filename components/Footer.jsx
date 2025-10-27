@@ -39,16 +39,20 @@ export default function Footer() {
             <h1 className="text-[var(--color-base)] text-2xl md:text-4xl font-montserrat">
               Contact
             </h1>
-            <p className="font-extralight text-lg md:text-xl">Email</p>
-            <p className="font-extralight text-lg md:text-xl">LinkedIn</p>
+            <p className="font-extralight text-lg md:text-xl">
+              <a href="mailto:contactzeyno@gmail.com">Email</a>
+            </p>
+            <p className="font-extralight text-lg md:text-xl">
+              <a href="https://www.linkedin.com/company/studio-zeyno/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </p>
           </div>
         </div>
 
         {/* Book order */}
         <div className="flex justify-center w-2/3 md:w-[22%] md:h-[30vh]">
-          <div className="bg-base px-6 py-2 mt-4 text-lg md:mt-10 md:h-12 md:text-2xl font-light rounded-[5vw] md:rounded-[2vw]">
+          <a href="https://tally.so/r/nGM2Po" target="_blank" rel="noopener noreferrer" className="bg-base px-6 py-2 mt-4 text-lg md:mt-10 md:h-12 md:text-2xl font-light rounded-[5vw] md:rounded-[2vw] inline-block">
             Book a Demo
-          </div>
+          </a>
         </div>
       </div>
 
